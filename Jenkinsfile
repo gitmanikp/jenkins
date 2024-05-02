@@ -15,9 +15,7 @@
             }
             stage('Run') {
                 steps {
-                    // Execute Java application
-                    sh 'java -jar target/jenkins-0.0.1-SNAPSHOT.jar'
-                    sh 'pkill -f "java -jar target/jenkins-0.0.1-SNAPSHOT.jar"'
+                    sh 'Running stage RUN'
                 }
             }
         }
