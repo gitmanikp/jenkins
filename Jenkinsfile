@@ -17,7 +17,7 @@
                     sh '''
                     ehco 'Running Run stage...'
                     java -jar target/jenkins-0.0.1-SNAPSHOT.jar &
-                    sleep 10
+                    sleep 15
                     '''
                 }
             }
