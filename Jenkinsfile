@@ -1,5 +1,10 @@
     pipeline {
-        agent any
+        agent {
+                docker {
+                    image 'java17-maven'
+                    reuseNode true
+                }
+            }
 
         stages {
             stage('Build') {
@@ -16,4 +21,3 @@
             }
         }
     }
-
